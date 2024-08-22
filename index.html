@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Minimal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <center>
-        <h1>Profile.img</h1>
-        <h1>social links & alalytics</h1>
-        <h1>Portfoio.io</h1>
-        </center>
+    <div class="container">
+        <div class="work-list">
+            <ul>
+                <li data-project="DM Resharing Description">DM Resharing <span>2022</span></li>
+                <li data-project="Media Viewer Description">Media Viewer <span>2022</span></li>
+                <li data-project="Command System Description">Command System <span>2022</span></li>
+                <li data-project="Send Interaction Description">Send Interaction <span>2022</span></li>
+                <li data-project="@Everyone Description">@Everyone <span>2022</span></li>
+                <li data-project="/Gif Description">/Gif <span>2022</span></li>
+                <li data-project="/Silent Description">/Silent <span>2022</span></li>
+                <li data-project="Gyro Pride Theme Description">Gyro Pride Theme <span>2021</span></li>
+                <li data-project="Word Effects Description">Word Effects <span>2021</span></li>
+                <li data-project="Reactions Description">Reactions <span>2021</span></li>
+            </ul>
+        </div>
+
+        <div class="profile">
+            <h1>Seyit Yilmaz,</h1>
+            <p>human interface designer at <span class="highlight">Apple</span></p>
+            <nav>
+                <a href="#">About</a> |
+                <a href="mailto:your.email@example.com">Email</a> |
+                <a href="#">LinkedIn</a> |
+                <a href="#">Twitter</a>
+            </nav>
+        </div>
+
+        <div class="popup" id="popup">
+            <p id="popup-text"></p>
+        </div>
+        <script src="app.js"></script>
     </div>
 </body>
 </html>
