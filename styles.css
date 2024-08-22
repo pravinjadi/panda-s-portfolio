@@ -1,0 +1,94 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    position: relative;
+}
+
+.work-list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.work-list li {
+    margin-bottom: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.work-list li span {
+    color: #999;
+}
+
+.profile {
+    text-align: right;
+    max-width: 300px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.profile p {
+    margin: 5px 0 20px;
+}
+
+.highlight {
+    color: #FF00FF;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 250px;
+    height: 500px;
+}
+
+.popup p {
+    font-size: 18px;
+    color: #333;
+}
+
+.work-list li.highlighted {
+    border-radius: 8px; /* Adjust the radius as needed */
+    background-color: #ffffff; /* Optional: add a light background color */
+}
+
