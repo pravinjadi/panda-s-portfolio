@@ -108,9 +108,9 @@ nav a:hover {
 
 @keyframes dissolve {
     0% { background-color: #f0f8ff; } /* Very light skyblue */
-    25% { background-color: #f5eaff; } /* Very light violet */
-    50% { background-color: #fcecea; } /* Very light pink */
-    75% { background-color: #ffefef; } /* very light red */
+    25% { background-color: #effcff; } /* very light blue */
+    50% { background-color: #f0eafc; } /* Very light pink */
+    75% { background-color: #f5eaff; } /* Very light violet */
     100% { background-color: #f0f8ff; } /* Very light skyblue */
 }
 
