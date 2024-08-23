@@ -108,14 +108,13 @@ nav a:hover {
 
 @keyframes dissolve {
     0% { background-color: #f0f8ff; } /* Very light skyblue */
-    25% { background-color: #effcff; } /* very light blue */
-    50% { background-color: #f0eafc; } /* Very light pink */
-    75% { background-color: #f5eaff; } /* Very light violet */
+    33% { background-color: #effcff; } /* very light blue */
+    64% { background-color: #f5eaff; } /* Very light violet */
     100% { background-color: #f0f8ff; } /* Very light skyblue */
 }
 
 body {
-    animation: dissolve 9s infinite;
+    animation: dissolve 6s infinite;
 }
 
 
