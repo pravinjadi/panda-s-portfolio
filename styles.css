@@ -1,13 +1,14 @@
 body {
     font-family: 'Helvetica Neue', sans-serif;
-    margin: 0;
+    margin: 50px;;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto;
+    overflow-y: auto;
 }
 
 .container {
@@ -27,19 +28,27 @@ body {
 
 .work-list li {
     margin-bottom: 10px;
+    margin-top: 10px;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     font-weight: 300;
     cursor: pointer;
+    font-size:medium;
+    transition: transform 0.2s ease, shadow 0.2s ease; /* Add transition for smooth animation */
+}
+
+.work-list li:hover {
+    transform: scale(1.1); /* Slight zoom out (3% smaller) */
 }
 
 .work-list li span {
     color: #999;
+    font-size: 15px;
 }
 
 .profile {
-    text-align: right;
+    text-align: center;
     max-width: 300px;
 }
 
@@ -54,13 +63,14 @@ body {
 }
 
 .highlight {
-    color: #FF00FF;
+    color: #ffffff;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
-    margin: 0 5px;
+    margin: 0 ;
+    padding: 9px;
 }
 
 nav a:hover {
@@ -77,18 +87,61 @@ nav a:hover {
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align:center;
     width: 250px;
     height: 500px;
 }
 
-.popup p {
-    font-size: 18px;
-    color: #333;
+.popup iframe {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
+
+
 .work-list li.highlighted {
-    border-radius: 8px; /* Adjust the radius as needed */
+    border-radius: 23px; /* Adjust the radius as needed */
     background-color: #ffffff; /* Optional: add a light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes dissolve {
+    0% { background-color: #f0f8ff; } /* Very light skyblue */
+    25% { background-color: #ffefef; } /* very light red */
+    50% { background-color: #fcecea; } /* Very light pink */
+    75% { background-color: #f5eaff; } /* Very light violet */
+    100% { background-color: #f0f8ff; } /* Very light skyblue */
+}
+
+body {
+    animation: dissolve 9s infinite;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-list {
+        margin-bottom: 20px;
+    }
+
+    .profile {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .popup {
+        width: 90%;
+        height: auto;
+    }
+
+    .work-list li {
+        padding: 10px;
+        font-size: 16px;
+    }
 }
 
