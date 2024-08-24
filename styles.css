@@ -1,5 +1,5 @@
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'lato', sans-serif;
     margin: 50px;;
     padding: 0;
     background-color: #f9f9f9;
@@ -11,12 +11,17 @@ body {
     overflow-y: auto;
 }
 
+.left-container,.middle-container,.right-container {
+    float: left;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
     width: 80%;
     max-width: 1200px;
     position: relative;
+    align-items: center;
 }
 
 .work-list ul {
@@ -24,6 +29,7 @@ body {
     padding: 0;
     margin-top: 0px;
     font-size: 18px;
+    margin-right: 100px;
 }
 
 .work-list li {
@@ -31,7 +37,7 @@ body {
     margin-top: 10px;
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     font-weight: 300;
     cursor: pointer;
     font-size:medium;
@@ -49,7 +55,7 @@ body {
 
 .profile {
     text-align: center;
-    max-width: 300px;
+    max-width: 500px;
 }
 
 .profile h1 {
@@ -98,19 +104,17 @@ nav a:hover {
     height: 100%;
 }
 
-
-
 .work-list li.highlighted {
-    border-radius: 23px; /* Adjust the radius as needed */
+    border-radius: 10px; /* Adjust the radius as needed */
     background-color: #ffffff; /* Optional: add a light background color */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes dissolve {
-    0% { background-color: #f0f8ff; } /* Very light skyblue */
+    0% { background-color: #e5f4ff; } /* Very light skyblue */
     33% { background-color: #effcff; } /* very light blue */
-    64% { background-color: #f5eaff; } /* Very light violet */
-    100% { background-color: #f0f8ff; } /* Very light skyblue */
+    64% { background-color: #efdfff; } /* Very light violet */
+    100% { background-color: #e5f4ff; } /* Very light skyblue */
 }
 
 body {
@@ -120,8 +124,24 @@ body {
 
 @media (max-width: 768px) {
     .container {
+        width: 100%!important;
         flex-direction: column;
         align-items: center;
+    }
+
+    .left-container {
+        width: 90%!important;
+    }
+    .middle-container {
+        display: none;
+    }
+    .right-container {
+        width: 100%!important;
+        position:sticky;
+        bottom: 0;
+        background-color: transparent;
+        padding: 20px;
+        border-top: 1px solid #ddd;
     }
 
     .work-list {
@@ -141,6 +161,10 @@ body {
     .work-list li {
         padding: 10px;
         font-size: 16px;
+    }
+
+    .work-list ul {
+        margin-right: 0px;
     }
 }
 
