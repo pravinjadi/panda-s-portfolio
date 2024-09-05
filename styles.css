@@ -26,7 +26,6 @@ body {
 
 .work-list ul {
     list-style: none;
-    padding: 0;
     margin-top: 20px;
     font-size: 18px;
     margin-right: 100px;
@@ -41,7 +40,7 @@ body {
     font-weight: 300;
     cursor: pointer;
     font-size:medium;
-    transition: transform 0.2s ease, shadow 0.2s ease; /* Add transition for smooth animation */
+    transition: transform 0.3s ease, shadow 0.2s ease; /* Add transition for smooth animation */
 }
 
 .work-list li:hover {
@@ -89,19 +88,20 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background:transparent;
+    background: #ffffff00;
     padding: 20px;
+    border-radius: 30px;
     text-align:center;
-    width: 250px;
-    height: 500px;
+    width: 280px;
+    height: 550px;
 }
 
 .popup iframe {
-    border-radius: 10px;
+    border-radius: 30px;
     width: 100%;
     height: 100%;
-    border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .work-list li.highlighted {
@@ -120,6 +120,7 @@ nav a:hover {
 body {
     animation: dissolve 6s infinite;
 }
+
 
 
 @media (max-width: 768px) {
@@ -154,8 +155,17 @@ body {
     }
 
     .popup {
-        width: 90%;
-        height: auto;
+        width: 80vw; /* 80% of viewport width */
+        height: 80vh; /* 80% of viewport height */
+        padding: 0px; /* Adjust padding for mobile */
+        background: #ffffff; /* Ensure background is visible */
+        overflow: hidden; /* Hide overflow if needed */
+    }
+
+    .popup iframe {
+        border-radius: 15px; /* Adjust if needed */
+        width: 100%;
+        height: 100%;
     }
 
     .work-list li {
@@ -167,4 +177,3 @@ body {
         margin-right: 0px;
     }
 }
-
