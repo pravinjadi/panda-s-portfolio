@@ -171,8 +171,7 @@ body {
     .popup {
         width: 290px; /* 80% of viewport width */
         height: 80vh; /* 80% of viewport height */
-        padding-top: 20px; /* Adjust padding for mobile */
-        margin: top 300px;
+        margin-top: 50px;
         background: #ffffff; /* Ensure background is visible */
         overflow: hidden; /* Hide overflow if needed */
     }
