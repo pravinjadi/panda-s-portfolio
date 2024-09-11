@@ -15,6 +15,10 @@ body {
     float: left;
 }
 
+.left-container{
+    margin-top: 100px;
+}
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -24,12 +28,18 @@ body {
     align-items: center;
 }
 
+ul {
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+
 .work-list ul {
     list-style: none;
     margin-top: 20px;
     font-size: 18px;
-    margin-right: 100px;
 }
+
+
 
 .work-list li {
     margin-bottom: 10px;
@@ -89,7 +99,6 @@ nav a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background: #ffffff00;
-    padding: 20px;
     border-radius: 30px;
     text-align:center;
     width: 280px;
@@ -121,9 +130,14 @@ body {
     animation: dissolve 6s infinite;
 }
 
+@media (max-width: 1183px) {
+    span {
+        opacity: 0; /* Makes the span transparent */
+        transition: opacity 0.3s ease; /* Smooth transition */
+    }
+}
 
-
-@media (max-width: 768px) {
+@media (max-width: 816px) {
     .container {
         width: 100%!important;
         flex-direction: column;
@@ -155,7 +169,7 @@ body {
     }
 
     .popup {
-        width: 80vw; /* 80% of viewport width */
+        width: 290px; /* 80% of viewport width */
         height: 80vh; /* 80% of viewport height */
         padding: 0px; /* Adjust padding for mobile */
         background: #ffffff; /* Ensure background is visible */
@@ -171,6 +185,11 @@ body {
     .work-list li {
         padding: 10px;
         font-size: 16px;
+    }
+
+    span {
+        opacity: 1; /* Makes the span visil */
+        transition: opacity 0.3s ease; /* Smooth transition */
     }
 
     .work-list ul {
